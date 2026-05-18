@@ -1,5 +1,5 @@
-def pattern7_triangle(num):
-    for i in range(num):
+def pattern8_reverse_triangle(num):
+    for i in range(num-1, -1, -1):
         spaces = num - i - 1
         stars = i * 2 + 1
         for _ in range(spaces):
@@ -8,7 +8,5 @@ def pattern7_triangle(num):
             print("*", end="")
         print("")
 
-
-
-pattern7_triangle(5)
-pattern7_triangle(3)
+pattern8_reverse_triangle(5)
+pattern8_reverse_triangle(3)
